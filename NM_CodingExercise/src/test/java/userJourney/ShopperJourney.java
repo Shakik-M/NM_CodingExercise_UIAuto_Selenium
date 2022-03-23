@@ -84,10 +84,10 @@ public class ShopperJourney {
 		
 		driver.findElement(By.id(loc.finish)).click();
 		
-		String sucessMessage = driver.findElement(By.cssSelector(loc.chkoutCom)).getText();
-		Assert.assertEquals(sucessMessage, loc.successMessage, "Checkout Complete Error!");
+		String successMessage = driver.findElement(By.cssSelector(loc.chkoutCom)).getText();
+		Assert.assertEquals(successMessage, loc.successMessage, "Checkout Complete Error!");
 		
-		System.out.println(loc.successMessage);
+		System.out.println(successMessage);
 		
 		driver.quit();
 	}
