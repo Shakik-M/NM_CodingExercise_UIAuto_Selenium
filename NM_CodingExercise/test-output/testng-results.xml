@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10367" started-at="2022-03-23T17:40:01 EDT" finished-at="2022-03-23T17:40:11 EDT">
+  <suite name="Default suite" duration-ms="20639" started-at="2022-03-24T09:46:42 EDT" finished-at="2022-03-24T09:47:03 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10367" started-at="2022-03-23T17:40:01 EDT" finished-at="2022-03-23T17:40:11 EDT">
-      <class name="userJourney.ShopperJourney_Headless">
-        <test-method status="PASS" signature="labSauceDemo()[pri:0, instance:userJourney.ShopperJourney_Headless@12c8a2c0]" name="labSauceDemo" duration-ms="10279" started-at="2022-03-23T17:40:01 EDT" finished-at="2022-03-23T17:40:11 EDT">
+    <test name="Default test" duration-ms="20639" started-at="2022-03-24T09:46:42 EDT" finished-at="2022-03-24T09:47:03 EDT">
+      <class name="userJourney.ShopperJourney_Parallel">
+        <test-method status="PASS" signature="labSauceDemo_C()[pri:0, instance:userJourney.ShopperJourney_Parallel@12c8a2c0]" name="labSauceDemo_C" duration-ms="9225" started-at="2022-03-24T09:46:42 EDT" finished-at="2022-03-24T09:46:52 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- labSauceDemo -->
-      </class> <!-- userJourney.ShopperJourney_Headless -->
+        </test-method> <!-- labSauceDemo_C -->
+        <test-method status="PASS" signature="labSauceDemo_F()[pri:0, instance:userJourney.ShopperJourney_Parallel@12c8a2c0]" name="labSauceDemo_F" duration-ms="11328" started-at="2022-03-24T09:46:52 EDT" finished-at="2022-03-24T09:47:03 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- labSauceDemo_F -->
+      </class> <!-- userJourney.ShopperJourney_Parallel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

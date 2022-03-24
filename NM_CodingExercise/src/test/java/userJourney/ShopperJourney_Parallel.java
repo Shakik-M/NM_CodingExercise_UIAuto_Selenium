@@ -7,6 +7,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,7 +17,9 @@ public class ShopperJourney_Parallel {
 		public static void labSauceDemo_C () {
 			
 			WebDriverManager.chromedriver().setup();
-			WebDriver driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
+			WebDriver driver = new ChromeDriver(options);
 			
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -86,7 +89,7 @@ public class ShopperJourney_Parallel {
 			String successMessage = driver.findElement(By.cssSelector(loc.chkoutCom)).getText();
 			Assert.assertEquals(successMessage, loc.successMessage, "Checkout Complete Error!");
 			
-			System.out.println(successMessage + Thread.currentThread().getId());
+			System.out.println(successMessage +" | "+Thread.currentThread().getId());
 			
 			driver.quit();
 			
@@ -167,7 +170,7 @@ public class ShopperJourney_Parallel {
 			Assert.assertEquals(successMessage, loc.successMessage, "Checkout Complete Error!");
 			
 			
-			System.out.println(successMessage + Thread.currentThread().getId());
+			System.out.println(successMessage +" | "+Thread.currentThread().getId());
 			
 			driver.quit();
 		}
